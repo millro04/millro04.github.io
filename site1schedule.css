@@ -2,7 +2,7 @@ body{background-color: rgb(232,232,232);
           
       }
 
-table, tr, td{border:solid;
+table, tr, td {border-style:solid;
           border-color:black;
     }
     
