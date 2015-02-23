@@ -2,3 +2,10 @@ body{background-color: rgb(232,232,232);
           border-style:solid;
           border-color:Black;
       }
+
+table, tr, td{border:solid;
+          border-color:black;
+    }
+    
+    table{text-align:center;
+    }
