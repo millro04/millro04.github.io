@@ -3,7 +3,7 @@ body{background-color: rgb(232,232,232);
           border-color:Black;
       }
 
-table, tr, td{border:solid;
+tr, td{border:solid;
           border-color:black;
     }
     
