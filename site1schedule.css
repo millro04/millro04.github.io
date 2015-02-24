@@ -7,5 +7,6 @@ table, tr, td {border-style:solid;
     }
     
     table{text-align:center;
+          margin:auto;
           
     }
