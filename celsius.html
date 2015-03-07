@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+#inline {display:inline;
+}
+</style>
+<title>Celcius-Fahrenheit</title>
+</head>
+
+<body>
+
+<label for="textbox">Celcius</label>
+<input type="text" id="textbox">
+<button onclick="convert();">Convert</button>
+<p id="inline"></p>
+
+
+<script>
+
+convert=function() {
+
+textbox=document.querySelector("#textbox");
+value=textbox.value;
+x=(value*1.8) + 32
+result=document.querySelector("#inline");
+thepar.innerHTML=x;
+
+}
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>
