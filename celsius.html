@@ -2,6 +2,7 @@
 <head>
 <style>
 #inline {display:inline;
+}
 body {background-color:LightCyan;
 }
 </style>
@@ -20,10 +21,10 @@ body {background-color:LightCyan;
 
 convert=function() {
 
-textbox=document.querySelector("#textbox");
-value=textbox.value;
-x=(value*1.8) + 32
-result=document.querySelector("#inline");
+textbox = document.querySelector("#textbox");
+value = textbox.value;
+x = (value*1.8) + 32
+result = document.querySelector("#inline");
 result.innerHTML=x;
 
 }
