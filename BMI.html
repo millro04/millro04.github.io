@@ -7,29 +7,33 @@
 <style>
   body {background-color:rgb(232,232,232);
   }
-  #result {display:inline;
-  }
+  
+  
 </style>
 </head>
 
 <body>
 
 <label for="textbox1">Enter weight in lbs</label>
-<input type="text" id="textbox1">
+<input type="range" min=0 max=500 value=0 onmousemove="convert();" id="textbox1">
 <label for="textbox2">Enter height in inches</label>
-<input type="text" id="textbox2">
+<input type="range" min=0 max=100 value=0 onmousemove="convert();" id="textbox2">
 <button onclick="convert();">Calculate BMI</button>
-<p id="result"></p>
+<p id="weight">Weight: 0</p>
+<p id="height">Height: 0</p>
+<p id="result">BMI: 0 </p>
   
 
 <script>
 convert=function() {
-textbox1 = document.querySelector("#textbox1");
-textbox2 = document.querySelector("#textbox2");
-weight = textbox1.value;
-height = textbox2.value;
+weight = document.querySelector("#textbox1").value;
+height = document.querySelector("#textbox2").value;
 result = document.querySelector("#result");
-result.innerHTML=(weight * 703)/(height*height);
+x = (weight * 703)/(height*height);
+weight.innerHTML="Weight: " + weight;
+height.HTML="Height: " + height;
+result.innerHTML="BMI: " + x;
+
 }
 </script>
 
