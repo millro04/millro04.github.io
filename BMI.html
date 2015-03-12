@@ -27,6 +27,7 @@
 <p id="weight">Weight: 0</p>
 <p id="height">Height: 0</p>
 <p id="result">BMI: 0 </p>
+<p id="good"></p>
   
 
 <script>
@@ -40,6 +41,14 @@ x = (weightvalue * 703)/(heightvalue*heightvalue);
 weight.innerHTML="Weight: " + weightvalue;
 height.innerHTML="Height: " + heightvalue;
 result.innerHTML="BMI: " + x;
+level = document.querySelector("#good");
+if(x < 19)
+  level.innerHTML="Too Low";
+if(x >= 19 && x <=24)
+  level.innerHTML="Okay";
+if(x > 24)
+  level.innerHTML="Too High";
+
 
 }
 </script>
