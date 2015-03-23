@@ -30,11 +30,12 @@
         
         
         <table id="table">
+            <tr>
             <th>First Name</th>   
             <th>Last Name</th>
             <th>Address</th>
             <th>Phone Number</th>
-            
+            </tr>
             
             
         </table>
@@ -52,12 +53,18 @@
                 phonenumber = document.querySelector("#box4").value;
                 table = document.querySelector("#table");
                 trow = document.createElement("tr");
-                td = document.createElement("td");
-                td.appendChild(firstname);
-                td.appendChild(lastname);
-                td.appendChild(address);
-                td.appendChild(phonenumber);
-                trow.appendChild(td);
+                t1 = document.createElement("td");
+                t2 = document.createElement("td");
+                t3 = document.createElement("td");
+                t4 = document.createElement("td");
+                t1.innerHTML=firstname;
+                t2.innerHTML=lastname;
+                t3.innerHTML=address;
+                t4.innerHTML=phonenumber;
+                trow.appendChild(t1);
+                trow.appendChild(t2);
+                trow.appendChild(t3);
+                trow.appendChild(t4);
                 table.appendChild(trow);
                 
                 
