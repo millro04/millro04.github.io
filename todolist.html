@@ -4,17 +4,37 @@
         .line {text-decoration: line-through
         }
         
+        li {list-style-type: none;
+        }
+        
+        
+        .Low {color: black;
+        }
+        
+        .Medium {color: blue;
+        }
+        
+        .High {color: green;
+        }
     </style>
 </head>
    
 <body>
     <label for="item">Item</label>
     <input type="text" id="item">
+    
+    <select id="priority">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+    </select>
+    
     <button onclick="add()">Add It</button>
+    <button onclick="clear()">Clear List</button>
+    
     
     <h1>To-Do List</h1>
-    <ul id="list">
-    </ul>
+    <ul id="list"></ul>
     
     
     
@@ -39,9 +59,15 @@
         listitem.appendChild(thevalue);
         list.appendChild(listitem);
         
+        prioritylevel = document.querySelector("#priority");
+        index = prioritylevel.selectedIndex;
+        theindex = prioritylevel.options[index];
+        indexvalue = theindex.value;
+        listitem.classList.add(indexvalue);
         
         
-       
+        
+      
         
          }
     
@@ -52,6 +78,16 @@
             this.parentNode.classList.remove("line");
             
             }
+    
+    
+    clear = function() {
+       list = document.getElementById("list");
+       list.innerHTML="";
+        
+    }
+    
+    
+  
         
 </script>
     
