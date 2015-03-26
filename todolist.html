@@ -24,7 +24,7 @@
         thevalue = document.createTextNode(item.value);
         list = document.querySelector("#list");
         listitem = document.createElement("li");
-        listitem.appendChild(thevalue);
+        listitem.innnerHTML=thevalue;
         list.appendChild(listitem);
         
 </script>
