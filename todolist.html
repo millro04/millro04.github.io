@@ -1,5 +1,10 @@
 <html>
 <head>    
+    <style>
+        .line {text-decoration: line-through
+        }
+        
+    </style>
 </head>
    
 <body>
@@ -24,9 +29,29 @@
         thevalue = document.createTextNode(item.value);
         list = document.getElementById("list");
         listitem = document.createElement("li");
+        
+        
+        box = document.createElement("input");
+        box.type = "checkbox";
+        box.onclick = checkmark;
+        
+        listitem.appendChild(box);
         listitem.appendChild(thevalue);
         list.appendChild(listitem);
-    }
+        
+        
+        
+       
+        
+         }
+    
+    checkmark = function() {
+        if (this.checked)
+            this.parentNode.classList.add("line");
+        else
+            this.parentNode.classList.remove("line");
+            
+            }
         
 </script>
     
