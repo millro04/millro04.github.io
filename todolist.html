@@ -19,13 +19,14 @@
     
     
 <script>
-    add = function() {
-        item = document.querySelector("#item");
+    add = function(){
+        item = document.getElementById("item");
         thevalue = document.createTextNode(item.value);
-        list = document.querySelector("#list");
+        list = document.getElementById("list");
         listitem = document.createElement("li");
-        listitem.innnerHTML=thevalue;
+        listitem.appendChild(thevalue);
         list.appendChild(listitem);
+    }
         
 </script>
     
