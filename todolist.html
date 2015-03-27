@@ -1,7 +1,10 @@
 <html>
 <head>    
     <style>
-        .line {text-decoration: line-through
+        
+        body {background-color: rgb(232,232,232);
+        }
+        .line {text-decoration: line-through;
         }
         
         li {list-style-type: none;
@@ -16,6 +19,15 @@
         
         .High {color: green;
         }
+        
+        
+        section {position:absolute;
+                 right:50px;
+                 top: 150px;
+        }
+        
+        
+        
     </style>
 </head>
    
@@ -30,14 +42,18 @@
     </select>
     
     <button onclick="add()">Add It</button>
-    <button onclick="clear()">Clear List</button>
+    <button onclick="clearlist()">Clear List</button>
     
     
     <h1>To-Do List</h1>
     <ul id="list"></ul>
     
     
-    
+    <section>
+        <p>Black Font = Low Priority</p>
+        <p>Blue Font = Medium Priority</p>
+        <p>Green Font = High Priority</p>
+    </section>
  
     
     
