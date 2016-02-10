@@ -4,19 +4,20 @@
     <meta charset="utf-8">
     <title>Testing JQuery</title>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="jquery-2.2.0.js"></script>
+
 
   </head>
+
   <body>
-      <h1 id="first-header"> This is a header tag </h1>
-      <p1 id="first-paragraph"> This is a paragraph tag </p1>
+      <h1 id="firstheader"> This is a header tag </h1>
+      <p1 id="firstparagraph"> This is a paragraph tag </p1>
   </body>
 
 
   <script>
     $(document).ready(function() {
-        $("#first-header").hover(function() {
+        $("#firstheader").hover(function() {
             alert("You entered header 1!");
 
         });
