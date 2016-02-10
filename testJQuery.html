@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Testing JQuery</title>
+
+    <script src="bower_components/jquery/jquery.js"> </script>
+
+  </head>
+  <body>
+      <h1 id="first-header"> This is a header tag </h1>
+      <p1 id = "first-paragraph"> This is a paragraph tag </p1>
+  </body>
+
+
+  <script>
+    $(function() {
+        $('#first-header').on('click', function(){
+          $('#first-header').slideToggle(200)
+        })
+
+    })
+
+  </script>
+</html>
