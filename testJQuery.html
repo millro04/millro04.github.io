@@ -9,17 +9,18 @@
   </head>
   <body>
       <h1 id="first-header"> This is a header tag </h1>
-      <p1 id = "first-paragraph"> This is a paragraph tag </p1>
+      <p1 id="first-paragraph"> This is a paragraph tag </p1>
   </body>
 
 
   <script>
-    $(function() {
-        $('#first-header').on('click', function(){
-          $('#first-header').slideToggle(200)
-        })
+    $(document).ready(function() {
+        $("#first-header").hover(function() {
+            alert("You entered header 1!");
 
-    })
+        });
+
+    });
 
   </script>
 </html>
