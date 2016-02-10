@@ -10,17 +10,22 @@
   </head>
 
   <body>
+      <button id="btn1"> Button 1 </button>
       <h1 id="firstheader"> This is a header tag </h1>
       <p1 id="firstparagraph"> This is a paragraph tag </p1>
   </body>
 
 
   <script>
-    $(document).ready(function() {
-        $("#firstheader").hover(function() {
-            alert("You entered header 1!");
+    $(function() {
+
+        $("#btn1").on("click", function() {
+
+            $("#first paragraph").slideToggle(200);
 
         });
+
+
 
     });
 
