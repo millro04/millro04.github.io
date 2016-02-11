@@ -6,8 +6,8 @@
   <script>
     $(document).ready(function(){
 
-      $("#hiddenpar").click(function(){
-          $(this).slideToggle("slow");
+      $("#aboutme").click(function(){
+          $("#hiddenpar").slideToggle("slow");
       });
 
 
@@ -46,8 +46,13 @@
   .center{text-align:center;
   }
 
+  #hiddenpar{color: 'Green';
+}
 
-  
+  #aboutme{
+    color: 'Purple';
+  }
+
 
 
 
@@ -89,7 +94,7 @@
     </aside>
 
   <strong>
-  <h2 class="center">About Me</h2>
+  <h2 class="center" id="aboutme">About Me</h2>
 
   <p class="center" id="hiddenpar">I am currently a sophomore at Luther College in Decorah, Iowa, studying Computer Science. One of my biggest passions include personal fitness and exercise. I also love the sport of basketball and am passionate about music. I strongly believe in not limiting ourselves to certain categories of life and I believe it is important to be immersed in a wide variety of things. My dream in life is to fulfill whatever God calls me to do and use my passions and talents to make a difference.</p>
   </strong>
