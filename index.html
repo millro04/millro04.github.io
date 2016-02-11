@@ -1,65 +1,82 @@
 <html>
   <head>
-  
+
   <link rel="stylesheet" type="text/css" href="site1.css" >
-  
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $("#hiddenpar").click(function(){
+          $(this).slideToggle("slow");
+      });
+
+
+    };
+
+
+  </script>
+
+
   <style>
-  
-  
+
+
     aside { float:left;
             width: 33%;
             height: 215px;
             background-color:LightBlue;
             border-right:solid black 1.5px;
             }
-            
+
   strong {float:left;
           width:66.85%;
           height: 215px;
           background-color:LightBlue;
-          
+
   }
-  
+
   section{ float:right;
           width:415px;
           margin:35px;
           border:solid black 1.5px;
-          
+
   }
-  
-  
-  
+
+
+
   .center{text-align:center;
   }
-  
-    
-    
-    
-    
-    
-  </style>  
-  
+
+
+  #hiddenpar{
+    display: none;
+  }
+
+
+
+
+
+  </style>
+
     <title>Kyle Miller</title>
-    
-    
-  
+
+
+
   </head>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
   <body>
-  
+
      <h1>Greetings</h1>
      <h4 class="center">This is my very first web creation. Take a look!</h4>
-  
+
   <aside>
    <h2>CS 130 Class Assignments</h2>
       <ul>
@@ -72,56 +89,56 @@
         <li><a href="testJQuery.html">Test JQuery</a></li>
       </ul>
     </aside>
-  
+
   <strong>
   <h2 class="center">About Me</h2>
-    
-  <p class="center">I am currently a sophomore at Luther College in Decorah, Iowa, studying Computer Science. One of my biggest passions include personal fitness and exercise. I also love the sport of basketball and am passionate about music. I strongly believe in not limiting ourselves to certain categories of life and I believe it is important to be immersed in a wide variety of things. My dream in life is to fulfill whatever God calls me to do and use my passions and talents to make a difference.</p>
-  </strong>  
-     
-      
-      
-      
-      
-      
+
+  <p class="center" id="hiddenpar">I am currently a sophomore at Luther College in Decorah, Iowa, studying Computer Science. One of my biggest passions include personal fitness and exercise. I also love the sport of basketball and am passionate about music. I strongly believe in not limiting ourselves to certain categories of life and I believe it is important to be immersed in a wide variety of things. My dream in life is to fulfill whatever God calls me to do and use my passions and talents to make a difference.</p>
+  </strong>
+
+
+
+
+
+
       <h2>My Favorite Websites</h2>
-      
+
       <ul>
         <li><a href="http://espn.go.com">ESPN</a></li>
         <li><a href="http://luther.edu">Luther College</a></li>
       </ul>
-      
+
       <section>
       <h3>Quotes</h3>
-      
+
         <p><i>The man who is swimming agains the stream knows the strength of it.</i> Woodrow Wilson</p>
         <p><i>Cell phones these days keep getting thinner and smarter...people the opposite.</i> Anonymous</p>
-    
-      
+
+
       </section>
-      
-      
-      
-      
-      
-      
+
+
+
+
+
+
       <h3>Photos of Me</h3>
       <img src="https://scontent-yyz1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/11150867_10202912626136872_8564364299229712647_n.jpg?oh=efad5ab653c923c5e829be7850b5131a&oe=56A04123" height="450px">
-      
-       
-       
-       
-       
-      
-      
-      
-     
-      
-      
+
+
+
+
+
+
+
+
+
+
+
   </body>
-  
-  
-  
-  
-  
+
+
+
+
+
 </html>
