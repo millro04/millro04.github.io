@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Testing JQuery</title>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
-    </script>
-
-
-  </head>
-
-  <body>
-      <button id="btn1"> Button 1 </button>
-      <h1 id="firstheader"> This is a header tag </h1>
-      <p1 id="firstparagraph"> This is a paragraph tag </p1>
-  </body>
-
-
-  <script>
-    $(function() {
-
-      $("#firstparagraph").click(function(){
-      $(this).hide();
-});
-
-
-
-
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
     });
+});
+</script>
 
-  </script>
+<style>
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+</head>
+<body>
+
+<div id="flip">Click to slide the panel down or up</div>
+<div id="panel">Hello world!</div>
+
+</body>
 </html>
