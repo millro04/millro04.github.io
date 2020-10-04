@@ -1,8 +1,6 @@
 body{background-color: rgb(232,232,232);
-          border-style:solid;
-          border-color:Black;
+  font-family:sans-serif;
       }
       
       h1{text-align:center;
-        font-size:52pt;
       }
